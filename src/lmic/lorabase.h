@@ -37,7 +37,7 @@ enum { DR_PAGE_US915 = 0x10 };
 
 // Global maximum frame length
 enum { STD_PREAMBLE_LEN  =  8 };
-enum { MAX_LEN_FRAME     = 128 }; // old:64, rattachai 
+enum { MAX_LEN_FRAME     = 255 }; // old:64, rattachai 
 enum { LEN_DEVNONCE      =  2 };
 enum { LEN_ARTNONCE      =  3 };
 enum { LEN_NETID         =  3 };
@@ -61,7 +61,7 @@ enum { BCN_SLOT_SPAN_us  =   30000 };
 #if defined(CFG_eu868) // ==============================================
 
 enum _dr_eu868_t { DR_SF12=0, DR_SF11, DR_SF10, DR_SF9, DR_SF8, DR_SF7, DR_SF7B, DR_FSK, DR_NONE };
-enum { DR_DFLTMIN = DR_SF7 }; 
+enum { DR_DFLTMIN = DR_SF12 }; // old:7 rattachai   
 enum { DR_PAGE = DR_PAGE_EU868 };
 
 // Default frequency plan for EU 868MHz ISM band
@@ -94,12 +94,12 @@ enum { EU868_F1 = 923200000,      // g1   SF7-12
        EU868_J5 = 924600000,      // g2   SF7-12   ditto
        EU868_J6 = 924800000,      // g2   SF7-12   ditto
 };
-enum { EU868_FREQ_MIN = 923000000,
+enum { EU868_FREQ_MIN = 922000000,
        EU868_FREQ_MAX = 925000000 };       
 
 enum { CHNL_PING         = 5 };
 enum { FREQ_PING         = EU868_F6 };  // default ping freq
-enum { DR_PING           = DR_SF9 };       // default ping DR
+enum { DR_PING           = DR_SF9 };    // default ping DR
 enum { CHNL_DNW2         = 5 };
 enum { FREQ_DNW2         = EU868_F6 };
 enum { DR_DNW2           = DR_SF12 };
