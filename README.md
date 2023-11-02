@@ -1,3 +1,6 @@
+This is a workaround of matthijskooijman/arduino-lmic for AS923 upper spectrum (923-925 MHz)
+direct replace the frequency table and datarate in EU868 configuration.
+
 Arduino-LMIC library
 ====================
 This repository contains the IBM LMIC (LoraMAC-in-C) library, slightly
