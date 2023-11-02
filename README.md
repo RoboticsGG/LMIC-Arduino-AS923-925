@@ -1,5 +1,5 @@
 This is a workaround of matthijskooijman/arduino-lmic for AS923 upper spectrum (923-925 MHz)
-direct replace the frequency table and datarate in EU868 configuration.
+direct replace the frequency table and datarate of EU868 configuration.
 
 Arduino-LMIC library
 ====================
